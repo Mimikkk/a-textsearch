@@ -1,10 +1,10 @@
-# a-textsearch - Typescript friendly textsearch path resolve
+# @nimir/a-textsearch - Typescript friendly textsearch path resolve
 
-<a href="https://www.npmjs.com/package/a-textsearch">
-  <img alt="npm version" src="https://img.shields.io/npm/v/a-textsearch.svg?style=flat-square" />
+<a href="https://www.npmjs.com/package/@nimir/a-textsearch">
+  <img alt="npm version" src="https://img.shields.io/npm/v/@nimir/a-textsearch.svg?style=flat-square" />
 </a>
-<a href="https://www.npmjs.com/package/a-textsearch">
-  <img alt="npm downloads" src="https://img.shields.io/npm/dm/a-textsearch.svg?style=flat-square" />
+<a href="https://www.npmjs.com/package/@nimir/a-textsearch">
+  <img alt="npm downloads" src="https://img.shields.io/npm/dm/@nimir/a-textsearch.svg?style=flat-square" />
 </a>
 
 A blazingly-fast, type-safe TypeScript package for performing text searches within collections with support for nested
@@ -14,15 +14,15 @@ self referencing objects.
 ## Install
 
 ```bash
-pnpm install a-textsearch
+pnpm install @nimir/a-textsearch
 ```
 
 ```bash
-npm install a-textsearch
+npm install @nimir/a-textsearch
 ```
 
 ```bash
-yarn add a-textsearch
+yarn add @nimir/a-textsearch
 ```
 
 ## Features
@@ -60,7 +60,7 @@ Options for text-searching.
 ### Usage with an array of strings
 
 ```ts
-import { Path } from 'a-textsearch';
+import { create } from '@nimir/a-textsearch';
 
 const items = ['a', 'b', 'c', 'd'];
 
@@ -75,7 +75,7 @@ search.search('a').map(({ item }) => item);
 #### No configuration
 
 ```ts
-import { create } from 'a-textsearch';
+import { create } from '@nimir/a-textsearch';
 
 type Item = { a: string; b: number; c: string };
 
@@ -95,7 +95,7 @@ search.search('a').map(({ item }) => item);
 #### With specified keys
 
 ```ts
-import { create } from 'a-textsearch';
+import { create } from '@nimir/a-textsearch';
 
 type Item = { a: string; b: number; c: string };
 
@@ -117,7 +117,7 @@ search.search('a').map(({ item }) => item);
 #### With nested keys
 
 ```ts
-import { create } from 'a-textsearch';
+import { create } from '@nimir/a-textsearch';
 
 type Item = {
   a: { b: { c: string } };
@@ -143,7 +143,7 @@ search.search('a').map(({ item }) => item);
 ### Usage with an array of self referencing objects
 
 ```ts
-import { create } from 'a-textsearch';
+import { create } from '@nimir/a-textsearch';
 
 type Item = {
   a: { b: { c: string } };

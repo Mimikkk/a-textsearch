@@ -86,7 +86,7 @@ export declare namespace TextSearch {
          *
          * @template T The type of the items in the collection.
          * */
-        export type SortFn<T> = typeof sort<T>;
+        type SortFn<T> = typeof sort<T>;
         type StringKey<T> = Path.Of<T, string | string[]>;
         type ObjectKey<T> = {
             path: StringKey<T>;
@@ -100,8 +100,7 @@ export declare namespace TextSearch {
          * @remarks
          * The key is the path to the property of the items to search for and should contain the text to search for.
          * */
-        export type Key<T> = StringKey<T> | ObjectKey<T>;
-        export {};
+        type Key<T> = StringKey<T> | ObjectKey<T>;
     }
     /**
      * The configuration for a text search.
@@ -125,4 +124,4 @@ export declare namespace TextSearch {
     const sort: <T>(a: Result<T>, b: Result<T>) => number;
     export {};
 }
-export declare const create: <T>(items: T[], options?: Partial<Options<T>>) => TextSearch<T>;
+export declare const create: <T>(items: T[], options?: Partial<TextSearch.Options<T>>) => TextSearch<T>;

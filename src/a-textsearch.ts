@@ -107,8 +107,8 @@ export namespace TextSearch {
      * */
     export type SortFn<T> = typeof sort<T>;
 
-    type StringKey<T> = Path.Of<T, string | string[]>;
-    type ObjectKey<T> = { path: StringKey<T>; weight?: number };
+    export type StringKey<T> = Path.Of<T, string | string[]>;
+    export type ObjectKey<T> = { path: StringKey<T>; weight?: number };
     /**
      * Key to search for in the collection of items.
      *
