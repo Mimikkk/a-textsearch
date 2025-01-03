@@ -1,4 +1,4 @@
-import { Path } from 'a-path';
+import { Path } from '@nimir/a-path';
 import { SearchResult } from './search-result.js';
 /**
  * A text search is a function that searches a collection of items for a query.

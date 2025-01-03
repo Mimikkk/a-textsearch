@@ -1,5 +1,5 @@
 {
-  "name": "a-textsearch",
+  "name": "@nimir/a-textsearch",
   "version": "1.0.0",
   "description": "A comprehensive TypeScript package for performing robust text searches within collections",
   "keywords": [
@@ -49,7 +49,7 @@
     "build:clear": "rimraf build",
     "build:lib": "vite build",
     "build:tsc": "tsc --project tsconfig.library.json",
-    "preinstall": "npx only-allow pnpm"
+    "test": "vitest"
   },
   "devDependencies": {
     "concurrently": "^8.2.2",
@@ -60,6 +60,6 @@
     "vitest": "^1.3.1"
   },
   "dependencies": {
-    "a-path": "^2.0.1"
+    "@nimir/a-path": "^2.0.2"
   }
 }

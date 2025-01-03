@@ -1,6 +1,6 @@
 import type { TextSearch } from './a-textsearch.js';
 import { isStringArray, normalize } from './utils.js';
-import { Path } from 'a-path';
+import { Path } from '@nimir/a-path';
 
 /**
  * A search record is a representation of an item in a collection that is optimized for searching.

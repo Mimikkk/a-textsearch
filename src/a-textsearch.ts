@@ -1,4 +1,4 @@
-import { Path } from 'a-path';
+import { Path } from '@nimir/a-path';
 import { SearchEngine } from './search-engine.js';
 import { SearchResult } from './search-result.js';
 import { SearchRecord } from './search-record.js';
